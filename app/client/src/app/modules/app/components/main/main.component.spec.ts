@@ -27,6 +27,6 @@ describe('MainComponent', () => {
         const fixture = TestBed.createComponent(MainComponent);
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('h1').textContent).toContain('Welcome to client!');
+        expect(compiled.querySelector('h1').textContent).toContain('Welcome to ferm!');
     }));
 });
