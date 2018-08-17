@@ -10,3 +10,4 @@
 | 20180817 | 2.0.3 | Bootstrap integration and basic theming support |
 | 20180817 | 2.0.4 | Unit testing and coverage setup, dependency updates |
 | 20180817 | 2.0.5 | Add app server (based on ts-node-foundation) |
+| 20180817 | 2.0.6 | Basic frontend build process and deployment to server public folder|

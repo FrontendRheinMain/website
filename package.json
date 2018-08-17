@@ -1,6 +1,6 @@
 {
   "name": "FERM-Website",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "The public website of FrontendRheinMain — Feel free to join and collaborate & improve",
   "main": "app.js",
   "repository": "https://github.com/FrontendRheinMain/website",
