@@ -1,0 +1,12 @@
+{
+  "server": {
+    "protocol":"https",
+    "domain":"my.production.domain",
+    "port": 4001
+  },
+  "controllers": [
+    "ExampleController"
+  ],
+  "states": [
+  ]
+}
