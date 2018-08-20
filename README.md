@@ -86,8 +86,8 @@ detailed documentation yet 😬.
 │   │   │   │   ├── _font.vars.scss
 │   │   │   │   └── _theme.scss
 │   ├── data
-│   └── server                  // Here is the backend development root
-│       ├── src
+│   └── server                  
+│       ├── src                 // Here is the backend development root
 │       │   ├── app.ts
 │       │   ├── classes
 │       │   │   ├── base
