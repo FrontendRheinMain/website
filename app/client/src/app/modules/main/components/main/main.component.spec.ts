@@ -13,7 +13,7 @@ describe('MainComponent', () => {
             ],
         }).compileComponents();
     }));
-    it('should create the app', async(() => {
+    it('should create the main', async(() => {
         const fixture = TestBed.createComponent(MainComponent);
         const app = fixture.debugElement.componentInstance;
         expect(app).toBeTruthy();

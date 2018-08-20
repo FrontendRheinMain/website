@@ -8,6 +8,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build:client":"cd ./app/client && yarn build"
+    "postinstall": "npm run resolve:dependencies",
+    "resolve:dependencies": "npm run install:server && npm run install:client",
+    "install:clean": "rm -rf app/client/node_modules && rm -rf app/client/node_modules && resolve:dependencies",
+    "install:server": "cd app/server && npm install",
+    "install:client": "cd app/app && npm install",
+    "build:client": "cd ./app/client && yarn build",
+    "develop": "concurrently \"cd app/client && npm run develop\" \"cd app/server && npm run develop\""
+  },
+  "dependencies": {
+    "concurrently": "^3.6.1"
   }
 }
