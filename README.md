@@ -30,11 +30,11 @@ There are two tested ways how it can be installed:
 
 #### Resolve dependencies
 
-Before development can start it's mandatory to resolve all npm dependencies. THis means resolving deps for:
+Before development can start it's mandatory to resolve all npm dependencies. This means resolving deps for:
 
 - Project itself
-- Client (Angular application)
-- Server Express.js application written in [TypeScript]
+- Client - Angular 6.x application
+- Server - Express.js application written in [TypeScript]
 
 To keep this as simple as possible those sub dependencies are resolved as a post install step.
 So just type following command and you should be good to go.
@@ -43,13 +43,13 @@ So just type following command and you should be good to go.
 npm install
 ```
 
-> Notice if mongo is not running yet ensure it's running before continue (see database chapter above)
+> Notice After npm install has been finished check if mongo is not running before continue (see database chapter above)
 
 #### Start development environment
 
-The development environment is served with both, watchers for frontend and backend. Once code has changed the
+The development environment is served with both, watchers for **frontend** and **backend**. Once code has changed the
 change gets detected by the watchers and the according application part is restarted immediately to provide the latest 
-functionality on the fly.
+functionality on the fly. Start the development environment by following command:
 
 ```shell
 npm run develop
@@ -61,9 +61,6 @@ npm run develop
 ### Frontend development
 Go to `app/client` and then create new components, service etc. via [AngularCli].
 
-### Backend development
-Go to `app/server` and check existing items as controllers, models, repositories, persistences because there is no 
-detailed documentation yet 😬.
 
 ```shell
 .
@@ -85,6 +82,15 @@ detailed documentation yet 😬.
 │   │   │   │   ├── _bootstrap.vars.scss
 │   │   │   │   ├── _font.vars.scss
 │   │   │   │   └── _theme.scss
+``` 
+
+### Backend development
+Go to `app/server` and check existing items as controllers, models, repositories, persistences because there is no 
+detailed documentation yet 😬.
+
+```shell
+.
+├── app
 │   ├── data
 │   └── server                  
 │       ├── src                 // Here is the backend development root
@@ -109,7 +115,6 @@ detailed documentation yet 😬.
 │       │   │   ├── persistence.memory.ts
 │       │   │   └── persistence.mongodb.ts
 │       │   └── repositories
-
 ``` 
 
 ## Troubleshooting
