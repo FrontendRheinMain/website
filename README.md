@@ -1,4 +1,4 @@
-# Website
+# FERM Website
 The public website of FrontendRheinMain — Feel free to join, collaborate &amp; improve
 
 ### Prerequisites
