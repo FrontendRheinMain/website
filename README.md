@@ -69,7 +69,7 @@ detailed documentation yet 😬.
 .
 ├── app
 │   ├── client
-│   │   ├── src
+│   │   ├── src                 // Here is the front development root
 │   │   │   ├── app
 │   │   │   │   ├── components
 │   │   │   │   ├── modules
@@ -86,7 +86,7 @@ detailed documentation yet 😬.
 │   │   │   │   ├── _font.vars.scss
 │   │   │   │   └── _theme.scss
 │   ├── data
-│   └── server
+│   └── server                  // Here is the backend development root
 │       ├── src
 │       │   ├── app.ts
 │       │   ├── classes
