@@ -15,11 +15,14 @@ export class PersistenceMongodb extends BasePersistence {
     }
 
     private _connect() {
-        console.log(process.env.MONGO_HOST);
-        console.log(process.env.MONGO_PORT);
 
-        if (!process.env.MONGO_HOST || !process.env.MONGO_PORT) {
-            throw new Error('MongoDB credentials missing. Pleas specify in all config files at db property({"mongo":{"host":"MY_HOST", "port":"MY_PORT"}})');
+        if (
+            !process.env.MONGO_HOST ||
+            !process.env.MONGO_PORT ||
+            !process.env.MONGO_DBNAME ||
+            [process.env.MONGO_HOST, process.env.MONGO_PORT, process.env.MONGO_DBNAME].indexOf('undefined') !== -1
+        ) {
+            throw new Error('MongoDB credentials missing. Pleas specify in all config files at db property({"mongo":{"host":"MY_HOST", "port":"MY_PORT", "dbname":"MY_DB"}})');
         }
 
         return new Promise((resolve) => {
@@ -27,7 +30,7 @@ export class PersistenceMongodb extends BasePersistence {
                 resolve(true);
             } else {
                 mongoose
-                    .connect('mongodb://localhost:27017/ferm', {
+                    .connect('mongodb://' + process.env.MONGO_HOST + ':' + process.env.MONGO_PORT + '/' + process.env.MONGO_DBNAME, {
                         useNewUrlParser: true
                     })
                     .then((connection) => {

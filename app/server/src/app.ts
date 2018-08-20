@@ -41,6 +41,7 @@ export class App {
         if (!!dbConfiguration.mongo) {
             process.env.MONGO_HOST = dbConfiguration.mongo.host;
             process.env.MONGO_PORT = dbConfiguration.mongo.port;
+            process.env.MONGO_DBNAME = dbConfiguration.mongo.dbname;
         }
     }
 

@@ -6,8 +6,9 @@
   },
   "db": {
     "mongo": {
-      "host": "MY_HOST",
-      "port": "MY_PORT"
+      "host": "localhost",
+      "port": "27017",
+      "dbname": "FERMDEV"
     }
   },
   "controllers": [

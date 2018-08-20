@@ -5,10 +5,11 @@
   "controllers": [
     "ExampleController"
   ],
-  "db":{
-    "mongo":{
-      "host":"localhost",
-      "port":"27017"
+  "db": {
+    "mongo": {
+      "host": "localhost",
+      "port": "27017",
+      "dbname": "FERMTESTING"
     }
   },
   "states": [
