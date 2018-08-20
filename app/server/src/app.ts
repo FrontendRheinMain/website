@@ -30,10 +30,20 @@ export class App {
 
         this.log.log = console.log.bind(console);
 
+        this._applyEnvironmentVariables(this.config.db);
+
         this._loadControllers();
 
         this._run();
     }
+
+    private _applyEnvironmentVariables(dbConfiguration: any) {
+        if (!!dbConfiguration.mongo) {
+            process.env.MONGO_HOST = dbConfiguration.mongo.host;
+            process.env.MONGO_PORT = dbConfiguration.mongo.port;
+        }
+    }
+
 
     private loadController(controllerName: string) {
 

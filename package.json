@@ -6,5 +6,8 @@
   "repository": "https://github.com/FrontendRheinMain/website",
   "author": "Jan Deppisch <info@frontend-rheinmain.de> Bernhard Behrendt <bernhard.bezdek@googlemail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build:client":"cd ./app/client && yarn build"
+  }
 }

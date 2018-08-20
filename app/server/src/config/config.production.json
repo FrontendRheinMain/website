@@ -7,6 +7,12 @@
   "controllers": [
     "ExampleController"
   ],
+  "db":{
+    "mongo":{
+      "host":"localhost",
+      "port":"27017"
+    }
+  },
   "states": [
   ]
 }

@@ -5,11 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "xpostinstall": "yarn run cover",
-    "start": "NODE_ENV=production ./node_modules/.bin/ts-node --fast src/index.ts",
+    "start": "NODE_ENV=production ./node_modules/.bin/ts-node --T src/index.ts",
     "develop": "./node_modules/.bin/nodemon -L -e ts",
     "test": "NODE_ENV=testing ./node_modules/.bin/mocha -r ts-node/register src/**/*.spec.ts src/**/**/*.spec.ts ../shared/**/*.ts",
-    "cover": "./node_modules/.bin/nyc yarn test",
-    "daemon": "./node_modules/.bin/pm2 delete -s invitr || : && NODE_ENV=production ./node_modules/.bin/pm2 start --name invitr npm -- start"
+    "cover": "./node_modules/.bin/nyc yarn test"
   },
   "author": "Bernhard Behrendt <bernhard.bezdek@googlemail.com>",
   "license": "MIT",
@@ -21,7 +20,6 @@
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "mongoose": "^5.2.8",
-    "pm2": "^3.0.3",
     "ts-node": "^7.0.1",
     "typescript": "^2.9.2"
   },

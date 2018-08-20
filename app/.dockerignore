@@ -1,0 +1,6 @@
+client
+app/data
+app/server/.nyc_output
+app/server/.tscache
+app/server/coverage
+node_modules

@@ -1,13 +1,18 @@
 {
   "server": {
-    "protocol":"http",
-    "domain":"localhost:4200",
+    "protocol": "http",
+    "domain": "localhost:4200",
     "port": 4000
+  },
+  "db": {
+    "mongo": {
+      "host": "MY_HOST",
+      "port": "MY_PORT"
+    }
   },
   "controllers": [
     "ExampleController"
   ],
   "states": [
-    
   ]
 }
