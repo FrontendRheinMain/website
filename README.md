@@ -61,7 +61,7 @@ npm run develop
 ### Frontend development
 Go to `app/client` and then create new components, service etc. via [AngularCli].
 
-### Frontend development
+### Backend development
 Go to `app/server` and check existing items as controllers, models, repositories, persistences because there is no 
 detailed documentation yet 😬.
 
