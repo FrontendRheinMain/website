@@ -123,7 +123,7 @@ If there are issues try to clean the project by call
 ```shell
 npm run clean:install
 ```
-this will remove all dependencies and perform a fresh install. If problems should persist feel also free to submit an 
+this will remove all dependencies and perform a fresh install. If problems still persist don't hesitate to submit an 
 issue in our [issue tracker].
 
 #### Authors
