@@ -10,9 +10,10 @@
   "scripts": {
     "postinstall": "npm run resolve:dependencies",
     "resolve:dependencies": "npm run install:server && npm run install:client",
-    "install:clean": "rm -rf app/client/node_modules && rm -rf app/client/node_modules && resolve:dependencies",
+    "clean": "rm -rf ./node_modules && rm -rf app/client/node_modules && rm -rf app/server/node_modules",
+    "install:clean": "npm run clean && npm run resolve:dependencies",
     "install:server": "cd app/server && npm install",
-    "install:client": "cd app/app && npm install",
+    "install:client": "cd app/client && npm install",
     "build:client": "cd ./app/client && yarn build",
     "develop": "concurrently \"cd app/client && npm run develop\" \"cd app/server && npm run develop\""
   },
