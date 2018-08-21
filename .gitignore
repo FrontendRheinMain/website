@@ -40,3 +40,13 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+# Docker volume mongo db files
+data/*.wt
+data/*.lock
+data/*.turtle
+data/*.bson
+data/WiredTiger
+data/diagnostic.data
+data/journal
