@@ -117,6 +117,19 @@ detailed documentation yet 😬.
 │       │   └── repositories
 ``` 
 
+## Production Run (via docker)
+Make sure the project folder is writable for the docker daemon.
+Then execute following script to start the production environment.
+
+```shell
+./reset-build-and-run.sh
+```
+This script will start two docker containers [mongo] with external storage connection for persisted data 
+and the application server.
+
+> Note you can run this shell-script locally as well to have a running mongo instance at place.
+It's then available via localhost:27017
+
 ## Troubleshooting
 If there are issues try to clean the project by call
 
