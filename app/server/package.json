@@ -4,7 +4,6 @@
   "description": "ferm server based on ts-node-foundation",
   "main": "index.ts",
   "scripts": {
-    "xpostinstall": "yarn run cover",
     "start": "NODE_ENV=production ./node_modules/.bin/ts-node --T --no-cache src/index.ts",
     "develop": "./node_modules/.bin/nodemon -L -e ts",
     "test": "NODE_ENV=testing ./node_modules/.bin/mocha -r ts-node/register src/**/*.spec.ts src/**/**/*.spec.ts ../shared/**/*.ts",

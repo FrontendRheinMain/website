@@ -1,16 +1,12 @@
 version: "3.7"
 
-networks:
-  main:
-
 services:
-
   mongo:
     image: mongo
     ports:
     - "27017:27017"
   ferm:
-    image: ferm-server
+    build: ./app/
     ports:
     - "4001:4001"
     links:

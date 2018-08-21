@@ -43,7 +43,7 @@ So just type following command and you should be good to go.
 npm install
 ```
 
-> Notice After npm install has been finished check if mongo is not running before continue (see database chapter above)
+> Notice: Once npm install has been finished, check if mongo db is running before continue (see database chapter above).
 
 #### Start development environment
 

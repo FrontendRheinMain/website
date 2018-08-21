@@ -18,6 +18,8 @@ export class App {
 
     constructor(config: any) {
 
+        console.log('NEWER VERSION 123');
+
         this.app = express();
 
         this.app.use(express.static(__dirname + '/../public'));

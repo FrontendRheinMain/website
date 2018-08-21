@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ExampleService} from "../../services/example.service";
 
 @Component({
     selector: 'ferm-root',
@@ -7,4 +8,7 @@ import {Component} from '@angular/core';
 })
 export class MainComponent {
     title = 'ferm';
+
+    constructor(private exampleService:ExampleService){
+    }
 }
