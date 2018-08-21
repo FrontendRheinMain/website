@@ -127,6 +127,8 @@ Then execute following script to start the production environment.
 This script will start two docker containers [mongo] with external storage connection for persisted data 
 and the application server.
 
+The application is then available at **http://localhost:4001/**
+
 > Note you can run this shell-script locally as well to have a running mongo instance at place.
 It's then available via localhost:27017
 
