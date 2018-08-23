@@ -160,4 +160,5 @@ License: [MIT]
 [TypeScript]: https://www.typescriptlang.org/ "TypeScript"
 [issue tracker]: https://github.com/FrontendRheinMain/website/issues/new "GitHub issue tracker"
 [MIT]: https://mit-license.org/#2018 "MIT License"
+
 [End]: //.
