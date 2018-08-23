@@ -1,5 +1,5 @@
 import {BaseModel} from "../classes/base/base-model";
-import {ExampleDataInterface} from "../../../../../ts-node-foundation/shared/interfaces/example-data.interface";
+//import {ExampleDataInterface} from "../../../../../ts-node-foundation/shared/interfaces/example-data.interface";
 
 export class ExampleModel extends BaseModel implements ExampleDataInterface {
 

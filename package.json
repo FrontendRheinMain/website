@@ -4,7 +4,7 @@
   "description": "The public website of FrontendRheinMain — Feel free to join and collaborate & improve",
   "main": "app.js",
   "repository": "https://github.com/FrontendRheinMain/website",
-  "author": "Jan Deppisch <info@frontend-rheinmain.de> Bernhard Behrendt <bernhard.bezdek@googlemail.com>",
+  "author": "Bernhard Behrendt <bernhard.bezdek@googlemail.com> Jan Deppisch <info@frontend-rheinmain.de>",
   "license": "MIT",
   "private": false,
   "scripts": {
