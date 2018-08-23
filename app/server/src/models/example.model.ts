@@ -1,9 +1,9 @@
 import {BaseModel} from "../classes/base/base-model";
 //import {ExampleDataInterface} from "../../../../../ts-node-foundation/shared/interfaces/example-data.interface";
 
-export class ExampleModel extends BaseModel implements ExampleDataInterface {
+export class ExampleModel extends BaseModel  {
 
-    constructor(example: ExampleDataInterface) {
+    constructor(example: any) {
         super();
 
         this.id = example.id || null;
@@ -21,7 +21,7 @@ export class ExampleModel extends BaseModel implements ExampleDataInterface {
         return 'Hallo ' + this.name;
     }
 
-    public toJSON(): ExampleDataInterface {
+    public toJSON(): any {
         return {
             id: this.id,
             name: this.name,
