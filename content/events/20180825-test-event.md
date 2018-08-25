@@ -9,7 +9,7 @@ sponsors:   JavaScript Conference
 # Accessibility-Special und Ticketverlosung
 ## FrontendRheinMain Meetup Nr. 17 am 16. August 19:00 in Frankfurt bei den Codemonauten
 
-Am Donnerstag, 16. August sind wir in Frankfurt bei den Codemonauts zu Gast. Der große Schwerpunkt wird diesmal ein ca. 
+Am Donnerstag, 16. August sind wir in Frankfurt bei den [codemonauts] zu Gast. Der große Schwerpunkt wird diesmal ein ca. 
 1,5-stündiges Accessibility-Special sein. [Boris Diakur] (AOE) schärft in seiner Session das Bewusstsein für 
 Web-Accessibility und vermittelt essentielles Knowhow, welches in Webprojekten aller Art eingesetzt werden sollte. 
 Die Session richtet sich generell an alle Webworker sowie Entwickler, die die Grundlagen verstehen und praxisorientiert 
@@ -24,7 +24,7 @@ Wir starten um 19 Uhr.
 Bis demnächst!
 
 
-
+[codemonauts]: ../hosts/codemonauts-ug.md "codemonauts UG"
+[Boris Diakur]: ../speakers/boris-diakur.md "Boris Diakur (AOE)"
 [jetzt anmelden]: https://www.meetup.com/de-DE/frontend_rm/events/253415153/ "Anmeldung via Meetup"
 [International JavaScript Conference]: https://javascript-conference.com/ "ICS — International JavaScript Conference"
-[Boris Diakur]: ../speakers/boris-diakur "Boris Diakur (AOE)"
