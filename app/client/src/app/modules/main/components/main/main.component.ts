@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {ExampleService} from "../../services/example.service";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'ferm-root',
@@ -9,6 +10,9 @@ import {ExampleService} from "../../services/example.service";
 export class MainComponent {
     title = 'ferm';
 
-    constructor(private exampleService:ExampleService){
+    public contents$: Observable<any[]>;
+
+    constructor(private exampleService: ExampleService) {
+        this.contents$ = this.exampleService.fetchAll();
     }
 }
