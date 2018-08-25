@@ -1,5 +1,5 @@
 ---
-type:       2event
+type:       event
 speakers:   Boris Diakur, Jan Deppisch
 date:       2018-08-26
 host:       Codemonauts UG

@@ -1,10 +1,10 @@
 ___
 name:           Bernhard Behrendt
-web:            -
+web:            none
 github:         BernhardBehrendt
 stackoverflow:  https://stackoverflow.com/users/1165289/bernhard
 twitter:        bernibehrendt
-linkedin:       -
+linkedin:       none
 xing:           https://www.xing.com/profile/Bernhard_Behrendt4
 knowledge:      JavaScript TypeScript Angular node.js HTML CSS
 ___
