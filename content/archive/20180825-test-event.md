@@ -53,8 +53,8 @@ zu finden:
 Es war ein tolles Meetup-Highlight und wir danken allen Teilnehmern für das große Interesse, [AOE] für das Sponsoring 
 mitsamt Videoaufzeichnung sowie [Bernhard Behrendt] und [Manfred Steyer] für die Mitwirkung und die interessanten Gespräche!
 
-[Bernhard Behrendt]: speaker/bernahrd-behrendt "Bernhard Behrendt (AOE)"
-[Manfred Steyer]: speaker/manfred-steyer "Manfred Steyer (softwarearchitect.io)"
+[Bernhard Behrendt]: ../speaker/bernahrd-behrendt "Bernhard Behrendt (AOE)"
+[Manfred Steyer]: ../speaker/manfred-steyer "Manfred Steyer (softwarearchitect.io)"
 [AOE]: /hosts/aoe-gmbh "AOE GmbH"
 [Slides FetchBot]: https://speakerd.s3.amazonaws.com/presentations/c80d691b0dc84e559081a15f09b4265c/FERM.pdf "FetchBot Presentation by Bernhard Behrendt"
 [Slides Large Angular architectures]: https://speakerd.s3.amazonaws.com/presentations/c80d691b0dc84e559081a15f09b4265c/FERM.pdf "FetchBot Presentation by Bernhard Behrendt"

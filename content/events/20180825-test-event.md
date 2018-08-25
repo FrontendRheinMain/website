@@ -27,4 +27,4 @@ Bis demnächst!
 
 [jetzt anmelden]: https://www.meetup.com/de-DE/frontend_rm/events/253415153/ "Anmeldung via Meetup"
 [International JavaScript Conference]: https://javascript-conference.com/ "ICS — International JavaScript Conference"
-[Boris Diakur]: /speakers/boris-diakur "Boris Diakur (AOE)"
+[Boris Diakur]: ../speakers/boris-diakur "Boris Diakur (AOE)"
