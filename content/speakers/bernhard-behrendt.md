@@ -1,4 +1,4 @@
-___
+---
 name:           Bernhard Behrendt
 web:            none
 github:         BernhardBehrendt
@@ -7,5 +7,4 @@ twitter:        bernibehrendt
 linkedin:       none
 xing:           https://www.xing.com/profile/Bernhard_Behrendt4
 knowledge:      JavaScript TypeScript Angular node.js HTML CSS
-___
-
+---
