@@ -11,8 +11,10 @@
       "dbname": "FERMDEV"
     }
   },
+  "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
   "controllers": [
-    "ExampleController"
+    "ExampleController",
+    "ContentController"
   ],
   "states": [
   ]

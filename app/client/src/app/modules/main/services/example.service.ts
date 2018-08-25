@@ -7,7 +7,7 @@ import {environment} from '../../../../environments/environment';
 })
 export class ExampleService {
 
-    private endpoint: string = environment.applicationServer + 'example/';
+    private endpoint: string = environment.applicationServer + 'content/';
 
     constructor(private http: HttpClient) {
         console.log('Production environment:', environment.production);
