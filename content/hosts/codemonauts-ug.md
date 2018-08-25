@@ -1,7 +1,7 @@
 ---
 type:       host
 location:   https://goo.gl/maps/5aCYioc3SNB2
-address:    Günthersburgallee 19, 60316 Frankfurt am Main
+address:    "Günthersburgallee 19, 60316 Frankfurt am Main"
 web:        codemonauts.com
 mail:       crew@codemonauts.com
 twitter:    @codemonauts
