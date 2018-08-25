@@ -9,7 +9,7 @@ lcov-report
 public
 
 # dependencies
-/node_module
+node_modules
 
 # IDEs and editors
 /.idea
