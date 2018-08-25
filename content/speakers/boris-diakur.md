@@ -1,4 +1,4 @@
-___
+---
 name:           Boris Diakur
 web:            http://borisdiakur.com/
 github:         borisdiakur
@@ -7,5 +7,5 @@ twitter:        diakur
 linkedin:       https://www.linkedin.com/pub/boris-diakur/38/70a/122
 xing:           https://www.xing.com/profile/Boris_Diakur
 knowledge:      JavaScript node.js accessibility HTML CSS
-___
+---
 

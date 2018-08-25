@@ -1,11 +1,11 @@
 ---
-type:       host
-location:   https://goo.gl/maps/nfSCDQiierm
-address:    "Kirchgasse 6, 65185 Wiesbaden"
-web:        aoe.com
-mail:       contact-de@aoe.com
-twitter:    @aoepeople
-github:     AOEpeople
+type:     host
+location: https://goo.gl/maps/nfSCDQiierm
+address:  Kirchgasse 6, 65185 Wiesbaden
+web:      https://aoe.com
+mail:     contact-de@aoe.com
+twitter:  aoepeople
+github:   AOEpeople
 ---
 
 # AOE GmbH

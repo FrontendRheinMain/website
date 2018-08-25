@@ -3,7 +3,7 @@ type:       archive
 speakers:   Bernhard Behrendt, Manfred Steyer, Jan Deppisch
 date:       2018-06-16
 host:       AOE GmbH
-sponsors:   -
+sponsors:   none
 ---
 
 # Enterprise-Softwarearchitektur und Automatisierung von UI-Interaktionen
