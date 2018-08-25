@@ -1,9 +1,9 @@
 ---
 type:       archive
-speakers:   Boris Diakur, Jan Deppisch
-date:       2018-08-26
-host:       Codemonauts UG
-sponsors:   JavaScript Conference
+speakers:   Bernhard Behrendt, Manfred Steyer, Jan Deppisch
+date:       2018-06-16
+host:       AOE GmbH
+sponsors:   -
 ---
 
 # Enterprise-Softwarearchitektur und Automatisierung von UI-Interaktionen

@@ -1,5 +1,5 @@
 ____
-name:           Boris Diaku
+name:           Boris Diakur
 web:            http://borisdiakur.com/
 github:         borisdiakur
 stackoverflow:  https://stackoverflow.com/users/601466/borisdiakur
