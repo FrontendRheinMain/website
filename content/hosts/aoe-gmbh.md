@@ -5,8 +5,9 @@ address:    Kirchgasse 6, 65185 Wiesbaden
 web:        aoe.com
 mail:       contact-de@aoe.com
 twitter:    @aoepeople
-github:     OEpeople
+github:     AOEpeople
 ---
+
 # AOE GmbH
 
 ## Agile Development of Digital Solutions
