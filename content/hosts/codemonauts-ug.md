@@ -1,3 +1,4 @@
+
 ---
 type:       host
 location:   https://goo.gl/maps/5aCYioc3SNB2
@@ -7,6 +8,7 @@ mail:       crew@codemonauts.com
 twitter:    @codemonauts
 github:     codemonauts
 ---
+
 # codemonauts UG
 ## Agiles Web Engineering als Fullservice
 

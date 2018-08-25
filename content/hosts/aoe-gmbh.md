@@ -5,7 +5,7 @@ address:    Kirchgasse 6, 65185 Wiesbaden
 web:        aoe.com
 mail:       contact-de@aoe.com
 twitter:    @aoepeople
-github:     AOEpeople
+github:     OEpeople
 ---
 # AOE GmbH
 
