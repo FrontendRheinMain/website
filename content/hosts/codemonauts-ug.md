@@ -1,4 +1,3 @@
-
 ---
 type:       host
 location:   https://goo.gl/maps/5aCYioc3SNB2
