@@ -5,7 +5,8 @@
     "port": 4001
   },
   "controllers": [
-    "ExampleController"
+    "ExampleController",
+    "ContentController"
   ],
   "db": {
     "mongo": {
