@@ -32,18 +32,21 @@ export class App {
 
         this.log.log = console.log.bind(console);
 
-        this._applyEnvironmentVariables(this.config.db);
+        this._applyEnvironmentVariables(this.config);
 
         this._loadControllers();
 
         this._run();
     }
 
-    private _applyEnvironmentVariables(dbConfiguration: any) {
-        if (!!dbConfiguration.mongo) {
-            process.env.MONGO_HOST = dbConfiguration.mongo.host;
-            process.env.MONGO_PORT = dbConfiguration.mongo.port;
-            process.env.MONGO_DBNAME = dbConfiguration.mongo.dbname;
+    private _applyEnvironmentVariables(config: any) {
+        if (!!config.db.mongo) {
+            process.env.MONGO_HOST = config.db.mongo.host;
+            process.env.MONGO_PORT = config.db.mongo.port;
+            process.env.MONGO_DBNAME = config.db.mongo.dbname;
+
+            process.env.GITHUB_CONTENT_API = config.remoteContentDirectory;
+            process.env.GITHUB_RAW_API = config.remoteContentRaw;
         }
     }
 

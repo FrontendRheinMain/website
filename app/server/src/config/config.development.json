@@ -12,6 +12,7 @@
     }
   },
   "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
+  "remoteContentRaw": "https://github.com/FrontendRheinMain/website/raw/develop/content",
   "controllers": [
     "ExampleController",
     "ContentController"
