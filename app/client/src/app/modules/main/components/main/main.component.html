@@ -1,8 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>
-    Welcome to {{ title }}!
-</h1>
+NAVIGATION
+
+<br>
+
+BREADCRUMB
+
+<br>
+
+NEXT_EVENT
+
+<br>
+
+LAST_EVENT (Slideshow???)
+
+<br>
+
+ARCHIVE
+
+<br>
+
+LAST_EVENT
+
 <h2>This is a list from backend content controller</h2>
+
 <ul *ngIf="contents$ | async as contents">
     <li *ngFor="let content of contents">
         {{content.name}}
@@ -10,3 +30,5 @@
 </ul>
 
 <router-outlet></router-outlet>
+
+FOOTER
