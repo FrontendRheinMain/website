@@ -1,0 +1,7 @@
+<nav *ngIf="categories$ | async as categories" class="navbar fixed-top navbar-light bg-light">
+    <a *ngFor="let category of categories"
+       [href]="category.path"
+       class="btn  btn-primary">
+        {{category.name}}
+    </a>
+</nav>

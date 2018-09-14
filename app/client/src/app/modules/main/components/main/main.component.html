@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-NAVIGATION
+<ferm-navigation *ngIf="categories$" [categories]="categories$"></ferm-navigation>
 
 <br>
 
@@ -7,10 +7,11 @@ BREADCRUMB
 
 <br>
 
-NEXT_EVENT
+<h1>NEXT</h1>
+<ferm-next-event *ngIf="nextEvent$" [event]="nextEvent$"></ferm-next-event>
 
-<br>
-
+<h1>PREV</h1>
+<ferm-previous-events  *ngIf="previousEvents$" [events]="previousEvents$"></ferm-previous-events>
 LAST_EVENT (Slideshow???)
 
 <br>
@@ -23,11 +24,7 @@ LAST_EVENT
 
 <h2>This is a list from backend content controller</h2>
 
-<ul *ngIf="contents$ | async as contents">
-    <li *ngFor="let content of contents">
-        {{content.name}}
-    </li>
-</ul>
+
 
 <router-outlet></router-outlet>
 

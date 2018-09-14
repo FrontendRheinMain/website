@@ -4,6 +4,12 @@
     "domain": "localhost:4200",
     "port": 4000
   },
+  "controllers": [
+    "ExampleController",
+    "ContentController"
+  ],
+  "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
+  "remoteContentRaw": "https://github.com/FrontendRheinMain/website/raw/develop/content",
   "db": {
     "mongo": {
       "host": "localhost",
@@ -11,12 +17,6 @@
       "dbname": "FERMDEV"
     }
   },
-  "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
-  "remoteContentRaw": "https://github.com/FrontendRheinMain/website/raw/develop/content",
-  "controllers": [
-    "ExampleController",
-    "ContentController"
-  ],
   "states": [
   ]
 }
