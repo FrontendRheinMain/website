@@ -10,7 +10,7 @@ export class PersistenceMongodb extends BasePersistence {
     private MongoDbModel;
     private connection;
 
-    constructor(private dbName: string, private collectionName: string, private schema: Schema) {
+    constructor(private collectionName: string, private schema: Schema) {
         super();
     }
 

@@ -17,6 +17,11 @@ export class ContentController extends BaseController {
         this.converter = new showdown.Converter({metadata: true});
 
         this._router.get(this._endpoint + '/json', (req: express.Request, res: express.Response): void => {
+
+            console.log('reach here');
+
+            console.log(process.env.GITHUB_CONTENT_API);
+
             requestPromiseNative
                 .get({
                     url: process.env.GITHUB_CONTENT_API,
@@ -40,14 +45,19 @@ export class ContentController extends BaseController {
                         }));
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.log(error.message);
                     res.status(404).send({error: 'NOT_FOUND'});
                 });
         });
 
+        // Fetch explicit file
         this._router.get(this._endpoint + '/json/:type/:file', (req: express.Request, res: express.Response): void => {
 
             let url = process.env.GITHUB_RAW_API + '/' + req.params.type + '/' + req.params.file;
+
+
+            console.log('Fetch');
+            console.log(url);
 
             requestPromiseNative
                 .get({
@@ -65,13 +75,15 @@ export class ContentController extends BaseController {
                         content: html
                     });
                 })
-                .catch(() => {
+                .catch((error) => {
+                    console.log(error.message);
                     res.status(404).send({error: 'NOT_FOUND'});
                 });
         });
 
+        // List content of a folder
         this._router.get(this._endpoint + '/json/:type', (req: express.Request, res: express.Response): void => {
-            let url = process.env.GITHUB_CONTENT_API.replace(/\?/, '/' + req.params.type + '?');
+            let url = process.env.GITHUB_CONTENT_API.replace('?', '/' + req.params.type + '?');
 
             requestPromiseNative
                 .get({
@@ -82,7 +94,6 @@ export class ContentController extends BaseController {
                     json: true
                 })
                 .then((response) => {
-                    console.log(response);
                     res.send(response
                         .map((item) => {
                             let replacement = (process.env.NODE_ENV === 'production') ? 'content/json/' : 'api/content/json/';

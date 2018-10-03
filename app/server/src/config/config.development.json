@@ -6,10 +6,15 @@
   },
   "controllers": [
     "ExampleController",
-    "ContentController"
+    "ContentController",
+    "ImportController"
   ],
-  "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
-  "remoteContentRaw": "https://github.com/FrontendRheinMain/website/raw/develop/content",
+  "userOrOrganisationName":"FrontendRheinMain",
+  "repositoryName":"website",
+  "contentRootFolder":"content",
+  "workingBranch":"develop",
+  "gitHubRaw": "http://localhost:9998",
+  "gitHubApi": "http://localhost:9999",
   "db": {
     "mongo": {
       "host": "localhost",

@@ -1,0 +1,39 @@
+{
+  "id" : "807b11f3-b01a-40bb-8e1a-4c982cf6d715",
+  "name" : "repos_frontendrheinmain_website_contents_content",
+  "request" : {
+    "url" : "/repos/FrontendRheinMain/website/contents/content?ref=develop",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[\n  {\n    \"name\": \"archive\",\n    \"path\": \"content/archive\",\n    \"sha\": \"9030a05a46cb515dc40f8c42a4711cfd0edc5440\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/archive?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/archive\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/9030a05a46cb515dc40f8c42a4711cfd0edc5440\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/archive?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/9030a05a46cb515dc40f8c42a4711cfd0edc5440\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/archive\"\n    }\n  },\n  {\n    \"name\": \"articles\",\n    \"path\": \"content/articles\",\n    \"sha\": \"443998ca45ee0ef3012e4f26b45c1c30ceb30396\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/articles?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/articles\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/443998ca45ee0ef3012e4f26b45c1c30ceb30396\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/articles?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/443998ca45ee0ef3012e4f26b45c1c30ceb30396\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/articles\"\n    }\n  },\n  {\n    \"name\": \"events\",\n    \"path\": \"content/events\",\n    \"sha\": \"091cd3c6e3b22e96ce7ce8fc37dafb35f979b32f\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/events?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/events\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/091cd3c6e3b22e96ce7ce8fc37dafb35f979b32f\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/events?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/091cd3c6e3b22e96ce7ce8fc37dafb35f979b32f\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/events\"\n    }\n  },\n  {\n    \"name\": \"hosts\",\n    \"path\": \"content/hosts\",\n    \"sha\": \"2dd5bb9c19dbf7f1f1f6570ba759fc50f1dfd5c5\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/hosts?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/hosts\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/2dd5bb9c19dbf7f1f1f6570ba759fc50f1dfd5c5\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/hosts?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/2dd5bb9c19dbf7f1f1f6570ba759fc50f1dfd5c5\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/hosts\"\n    }\n  },\n  {\n    \"name\": \"speakers\",\n    \"path\": \"content/speakers\",\n    \"sha\": \"616e50e1803f62089d7d028af17984c11e2b7f5f\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/speakers?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/speakers\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/616e50e1803f62089d7d028af17984c11e2b7f5f\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/speakers?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/616e50e1803f62089d7d028af17984c11e2b7f5f\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/speakers\"\n    }\n  },\n  {\n    \"name\": \"sponsors\",\n    \"path\": \"content/sponsors\",\n    \"sha\": \"7c04444648299d034dd3e626ffd93b5a59a99fca\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/sponsors?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/sponsors\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/7c04444648299d034dd3e626ffd93b5a59a99fca\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/sponsors?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/trees/7c04444648299d034dd3e626ffd93b5a59a99fca\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/tree/develop/content/sponsors\"\n    }\n  }\n]\n",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Wed, 03 Oct 2018 22:25:45 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Status" : "200 OK",
+      "X-RateLimit-Limit" : "60",
+      "X-RateLimit-Remaining" : "46",
+      "X-RateLimit-Reset" : "1538605925",
+      "Cache-Control" : "public, max-age=60, s-maxage=60",
+      "Vary" : "Accept",
+      "ETag" : "\"791494251b51a4d80ff6f7198be093f9ffa92083\"",
+      "Last-Modified" : "Mon, 20 Aug 2018 21:04:10 GMT",
+      "X-GitHub-Media-Type" : "github.v3",
+      "Access-Control-Expose-Headers" : "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "Access-Control-Allow-Origin" : "*",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "X-Frame-Options" : "deny",
+      "X-Content-Type-Options" : "nosniff",
+      "X-XSS-Protection" : "1; mode=block",
+      "Referrer-Policy" : "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "Content-Security-Policy" : "default-src 'none'",
+      "X-Runtime-rack" : "0.025812",
+      "X-GitHub-Request-Id" : "C75C:4593:8D1791:1677FC4:5BB541E9"
+    }
+  },
+  "uuid" : "807b11f3-b01a-40bb-8e1a-4c982cf6d715",
+  "persistent" : true,
+  "insertionIndex" : 4
+}

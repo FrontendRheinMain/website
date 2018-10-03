@@ -8,7 +8,7 @@ import {PersistenceMongodb} from "../persistences/persistence.mongodb";
 export class ExampleMongoRepository extends BaseRepository {
 
     // Both persistence layers provide an identical interface
-    protected _persistence: PersistenceInterface = new PersistenceMongodb('testdb', 'testcolection', new Schema({
+    protected _persistence: PersistenceInterface = new PersistenceMongodb( 'testcolection', new Schema({
         id: {type: String, index: true},
         name: {type: String, index: true},
         description: {type: String, index: false}

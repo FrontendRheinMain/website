@@ -1,0 +1,39 @@
+{
+  "id" : "1ae12d28-fc5d-47e1-96c9-ccc4cb33c79a",
+  "name" : "repos_frontendrheinmain_website_contents_content_archive",
+  "request" : {
+    "url" : "/repos/FrontendRheinMain/website/contents/content/archive?ref=develop",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[\n  {\n    \"name\": \"20180825-test-event.md\",\n    \"path\": \"content/archive/20180825-test-event.md\",\n    \"sha\": \"15f897ab0d0136b1e0f4e6cd7aaeeb09a75cb949\",\n    \"size\": 3371,\n    \"url\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/archive/20180825-test-event.md?ref=develop\",\n    \"html_url\": \"https://github.com/FrontendRheinMain/website/blob/develop/content/archive/20180825-test-event.md\",\n    \"git_url\": \"https://api.github.com/repos/FrontendRheinMain/website/git/blobs/15f897ab0d0136b1e0f4e6cd7aaeeb09a75cb949\",\n    \"download_url\": \"https://raw.githubusercontent.com/FrontendRheinMain/website/develop/content/archive/20180825-test-event.md\",\n    \"type\": \"file\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/FrontendRheinMain/website/contents/content/archive/20180825-test-event.md?ref=develop\",\n      \"git\": \"https://api.github.com/repos/FrontendRheinMain/website/git/blobs/15f897ab0d0136b1e0f4e6cd7aaeeb09a75cb949\",\n      \"html\": \"https://github.com/FrontendRheinMain/website/blob/develop/content/archive/20180825-test-event.md\"\n    }\n  }\n]\n",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Wed, 03 Oct 2018 22:25:45 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Status" : "200 OK",
+      "X-RateLimit-Limit" : "60",
+      "X-RateLimit-Remaining" : "44",
+      "X-RateLimit-Reset" : "1538605925",
+      "Cache-Control" : "public, max-age=60, s-maxage=60",
+      "Vary" : "Accept",
+      "ETag" : "\"791494251b51a4d80ff6f7198be093f9ffa92083\"",
+      "Last-Modified" : "Mon, 20 Aug 2018 21:04:10 GMT",
+      "X-GitHub-Media-Type" : "github.v3",
+      "Access-Control-Expose-Headers" : "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "Access-Control-Allow-Origin" : "*",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "X-Frame-Options" : "deny",
+      "X-Content-Type-Options" : "nosniff",
+      "X-XSS-Protection" : "1; mode=block",
+      "Referrer-Policy" : "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "Content-Security-Policy" : "default-src 'none'",
+      "X-Runtime-rack" : "0.029243",
+      "X-GitHub-Request-Id" : "C75B:4594:30C73DD:645A66B:5BB541E9"
+    }
+  },
+  "uuid" : "1ae12d28-fc5d-47e1-96c9-ccc4cb33c79a",
+  "persistent" : true,
+  "insertionIndex" : 3
+}

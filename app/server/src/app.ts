@@ -7,7 +7,7 @@ import * as bodyParser from "body-parser";
 
 export class App {
 
-    public config: any;
+    public cnf: any;
     public app: express.Application;
     public server: Server;
     public router: express.Router;
@@ -25,28 +25,28 @@ export class App {
         this.app.use(express.static(__dirname + '/../public'));
         this.app.use(bodyParser.json());
 
-        this.config = config;
+        this.cnf = config;
 
         this.server = createServer(this.app);
         this.router = express.Router();
 
         this.log.log = console.log.bind(console);
 
-        this._applyEnvironmentVariables(this.config);
+        this._applyEnvironmentVariables(this.cnf);
 
         this._loadControllers();
 
         this._run();
     }
 
-    private _applyEnvironmentVariables(config: any) {
-        if (!!config.db.mongo) {
-            process.env.MONGO_HOST = config.db.mongo.host;
-            process.env.MONGO_PORT = config.db.mongo.port;
-            process.env.MONGO_DBNAME = config.db.mongo.dbname;
+    private _applyEnvironmentVariables(cnf: any) {
+        if (!!cnf.db.mongo) {
+            process.env.MONGO_HOST = cnf.db.mongo.host;
+            process.env.MONGO_PORT = cnf.db.mongo.port;
+            process.env.MONGO_DBNAME = cnf.db.mongo.dbname;
 
-            process.env.GITHUB_CONTENT_API = config.remoteContentDirectory;
-            process.env.GITHUB_RAW_API = config.remoteContentRaw;
+            process.env.GITHUB_CONTENT_API = `${cnf.gitHubApi}/repos/${cnf.userOrOrganisationName}/${cnf.repositoryName}/contents/${ cnf.contentRootFolder}?ref=${cnf.workingBranch}`;
+            process.env.GITHUB_RAW_API = `${cnf.gitHubRaw}/${cnf.userOrOrganisationName}/${cnf.repositoryName}/${ cnf.workingBranch}/${ cnf.contentRootFolder}`;
         }
     }
 
@@ -59,7 +59,9 @@ export class App {
         import(pathToFile).then((Controller: any) => {
             let controllerInstance: BaseController = InstanceLoader.getInstance(Controller, controllerName, this.router);
 
-            controllerInstance.registerEndpoints();
+            if (!!controllerInstance.registerEndpoints) {
+                controllerInstance.registerEndpoints();
+            }
 
             this._applyRoutingOrLoadNextController();
         })
@@ -72,7 +74,7 @@ export class App {
     }
 
     private _loadControllers() {
-        this._controllers = [].concat(this.config.controllers);
+        this._controllers = [].concat(this.cnf.controllers);
         this.loadController(this._controllers.pop());
     }
 
@@ -85,7 +87,7 @@ export class App {
     }
 
     private _run() {
-        this.log.log('Server started on port ' + this.config.server.port);
-        this.server.listen(this.config.server.port);
+        this.log.log('Server started on port ' + this.cnf.server.port);
+        this.server.listen(this.cnf.server.port);
     }
 }

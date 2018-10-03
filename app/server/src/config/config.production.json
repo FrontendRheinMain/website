@@ -1,15 +1,19 @@
 {
   "server": {
-    "protocol":"https",
-    "domain":"my.production.domain",
+    "protocol": "https",
+    "domain": "my.production.domain",
     "port": 4001
   },
   "controllers": [
     "ExampleController",
     "ContentController"
   ],
-  "remoteContentDirectory": "https://api.github.com/repos/FrontendRheinMain/website/contents/content?ref=develop",
-  "remoteContentRaw": "https://github.com/FrontendRheinMain/website/raw/develop/content",
+  "userOrOrganisationName": "FrontendRheinMain",
+  "repositoryName": "website",
+  "contentRootFolder": "content",
+  "workingBranch": "develop",
+  "gitHubRaw": "https://raw.githubusercontent.com",
+  "gitHubApi": "https://api.github.com",
   "db": {
     "mongo": {
       "host": "mongo",
