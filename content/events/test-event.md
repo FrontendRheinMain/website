@@ -1,5 +1,6 @@
 ---
 type:       event
+title:      Test Event @ Codemonauts
 speakers:   Boris Diakur, Jan Deppisch
 date:       2018-08-26
 host:       Codemonauts UG

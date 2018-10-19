@@ -1,5 +1,6 @@
 ---
 type:       host
+date:       2018-08-28
 location:   https://goo.gl/maps/5aCYioc3SNB2
 address:    "Günthersburgallee 19, 60316 Frankfurt am Main"
 web:        codemonauts.com

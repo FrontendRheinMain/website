@@ -1,5 +1,6 @@
 ---
 type:       archive
+title:      Test Event
 speakers:   Bernhard Behrendt, Manfred Steyer, Jan Deppisch
 date:       2018-06-16
 host:       AOE GmbH
@@ -53,9 +54,9 @@ zu finden:
 Es war ein tolles Meetup-Highlight und wir danken allen Teilnehmern für das große Interesse, [AOE] für das Sponsoring 
 mitsamt Videoaufzeichnung sowie [Bernhard Behrendt] und [Manfred Steyer] für die Mitwirkung und die interessanten Gespräche!
 
-[Bernhard Behrendt]: ../speakers/bernhard-behrendt.md "Bernhard Behrendt (AOE)"
-[Manfred Steyer]: ../speakers/manfred-steyer.md "Manfred Steyer (softwarearchitect.io)"
-[AOE]: ../hosts/aoe-gmbh.md "AOE GmbH"
+[Bernhard Behrendt]: ../../speakers/bernhard-behrendt.md "Bernhard Behrendt (AOE)"
+[Manfred Steyer]: ../../speakers/manfred-steyer.md "Manfred Steyer (softwarearchitect.io)"
+[AOE]: ../../hosts/aoe-gmbh.md "AOE GmbH"
 [Slides FetchBot]: https://speakerd.s3.amazonaws.com/presentations/c80d691b0dc84e559081a15f09b4265c/FERM.pdf "FetchBot Presentation by Bernhard Behrendt"
 [Slides Large Angular architectures]: https://speakerd.s3.amazonaws.com/presentations/c80d691b0dc84e559081a15f09b4265c/FERM.pdf "FetchBot Presentation by Bernhard Behrendt"
 [FetchBot]: https://npmjs.org/fetchbot

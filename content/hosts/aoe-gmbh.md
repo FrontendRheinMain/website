@@ -1,6 +1,7 @@
 ---
 type:     host
 location: https://goo.gl/maps/nfSCDQiierm
+date:     2015-01-01
 address:  Kirchgasse 6, 65185 Wiesbaden
 web:      https://aoe.com
 mail:     contact-de@aoe.com
