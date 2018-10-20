@@ -1,5 +1,6 @@
 ---
 type:     host
+title:    AOE GmbH
 location: https://goo.gl/maps/nfSCDQiierm
 date:     2015-01-01
 address:  Kirchgasse 6, 65185 Wiesbaden

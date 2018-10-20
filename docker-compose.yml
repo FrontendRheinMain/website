@@ -32,7 +32,7 @@ services:
         - wiremock-github-raw.docker
 
   wiremock-github-api:
-    container_name: wiremock-github-raw-api
+    container_name: wiremock-github-api
     build: ./wiremock-github-api/
     ports:
     - 9999:8080
@@ -41,6 +41,6 @@ services:
     networks:
       main:
         aliases:
-        - wiremock-github-raw-api.docker
+        - wiremock-github-api.docker
 
 

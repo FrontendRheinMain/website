@@ -16,7 +16,7 @@ export class MainComponent {
     public previousEvents$: Observable<any[]>;
 
     constructor(private contentService: ContentService) {
-        this.categories$ = this.contentService.fetchCategories();
+        this.categories$ = this.contentService.fetchDirectory();
         this.nextEvent$ = this.contentService.fetchNextEvent();
         this.previousEvents$ = this.contentService.fetchPreviousEvents();
 

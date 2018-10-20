@@ -10,12 +10,16 @@ export abstract class BaseRepository implements RepositoryInterface {
 
     protected abstract _getModel(modelData): ModelInterface;
 
-    public create(modelData: any): Promise<boolean> {
-        return this._persistence.create(this._getModel(modelData));
+    public create(modelData: any): Promise<ModelInterface> {
+        return this._persistence
+            .create(this._getModel(modelData))
+            .then((modelItem) => {
+                return this._getModel(modelItem);
+            });
     }
 
-    public fetchAll(): Promise<Array<ModelInterface>> {
-        return this._persistence.fetchAll()
+    public fetchAll(idOrQUery: any | undefined): Promise<Array<ModelInterface>> {
+        return this._persistence.fetchAll(idOrQUery)
             .then((modelDataItems) => {
                     return modelDataItems.map((modelDataItem) => {
                         return this._getModel(modelDataItem);

@@ -13,11 +13,16 @@ export class ArticleMongoRepository extends BaseRepository {
         new Schema({
             id: {type: String, index: true},
             title: {type: String, index: true},
-            date: {type: String, index: false},
+            date: {type: Date, index: false, default: Date.now()},
             content: {type: String, index: false},
-            category: {type: 'ObjectId', index: true}
+            directory: {type: 'ObjectId', index: true},
+            meta: Object
         })
     );
+
+    public destroy(){
+        this._persistence.remove({});
+    }
 
     protected _getModel(modelData): ModelInterface {
         return new ArticleModel(modelData);

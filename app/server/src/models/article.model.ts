@@ -7,30 +7,32 @@ export class ArticleModel extends BaseModel {
     constructor(article: any) {
         super();
 
-        this.id = article.id || null;
+        this._id = article._id || undefined;
         this.title = article.title || null;
-        this.date = article.date || null;
-        this.content = article.content || null;
-        this.category = article.category || null;
-
+        this.date = article.date || undefined;
+        this.content = article.content || '';
+        this.directory = article.directory || null;
+        this.meta = article.meta || {}
     }
 
-    protected _properties = ['id'];
+    protected _properties = ['_id'];
 
-    public id: string;
+    public _id: string;
     public title: string;
     public date: Date;
     public content: string;
-    public category: string;
+    public directory: string;
+    public meta: any;
 
 
     public toJSON(): any {
         return {
-            id: this.id,
+            _id: this._id,
             title: this.title,
             date: this.date,
             content: this.content,
-            category: this.category
+            directory: this.directory,
+            meta: this.meta,
         };
     }
 }

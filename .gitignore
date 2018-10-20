@@ -50,3 +50,6 @@ data/*.bson
 data/WiredTiger
 data/diagnostic.data
 data/journal
+
+TODO.md
+github-token

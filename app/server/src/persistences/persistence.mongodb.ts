@@ -22,7 +22,7 @@ export class PersistenceMongodb extends BasePersistence {
             !process.env.MONGO_DBNAME ||
             [process.env.MONGO_HOST, process.env.MONGO_PORT, process.env.MONGO_DBNAME].indexOf('undefined') !== -1
         ) {
-            throw new Error('MongoDB credentials missing. Pleas specify in all config files at db property({"mongo":{"host":"MY_HOST", "port":"MY_PORT", "dbname":"MY_DB"}})');
+            throw new Error('MongoDB credentials missing. Please specify in all config files at db property({"mongo":{"host":"MY_HOST", "port":"MY_PORT", "dbname":"MY_DB"}})');
         }
 
         return new Promise((resolve) => {
@@ -31,11 +31,14 @@ export class PersistenceMongodb extends BasePersistence {
             } else {
                 mongoose
                     .connect('mongodb://' + process.env.MONGO_HOST + ':' + process.env.MONGO_PORT + '/' + process.env.MONGO_DBNAME, {
-                        useNewUrlParser: true
+                        useNewUrlParser: true,
+                        useCreateIndex: true
                     })
                     .then((connection) => {
+                        let existingModels = mongoose.models;
                         this.connection = connection;
-                        this.MongoDbModel = model(this.collectionName, this.schema);
+                        this.MongoDbModel = (!existingModels[this.collectionName]) ? model(this.collectionName, this.schema) : existingModels[this.collectionName];
+
                         resolve(true);
                     })
                     .catch((error) => {
@@ -51,25 +54,27 @@ export class PersistenceMongodb extends BasePersistence {
                 let modelData = item.toJSON();
                 return new this.MongoDbModel(modelData).save();
             })
-            .then(() => {
-                return true;
+            .then((newDocument) => {
+                return newDocument;
             })
             .catch(() => {
                 return false;
             });
     }
 
-    protected _fetchAll(): Promise<Array<any>> {
+    protected _fetchAll(idOrQuery: any | undefined): Promise<Array<any>> {
         return this._connect()
             .then(() => {
-                return this.MongoDbModel.find({});
+                return this.MongoDbModel.find((!idOrQuery) ? {} : (typeof idOrQuery === 'string') ? {id: idOrQuery} : idOrQuery);
             });
     }
 
-    protected _fetch(id: string): Promise<any> {
-        return this._connect()
+
+    protected _fetch(_id: string): Promise<any> {
+        return this
+            ._connect()
             .then(() => {
-                return this.MongoDbModel.findOne({id: id});
+                return this.MongoDbModel.findOne({_id: _id});
             });
     }
 
@@ -86,15 +91,17 @@ export class PersistenceMongodb extends BasePersistence {
             });
     }
 
-    protected _remove(id: string): Promise<boolean> {
+    protected _remove(idOrQuery: any | undefined): Promise<boolean> {
+
         return this
             ._connect()
             .then(() => {
-                return this.MongoDbModel.findOneAndRemove({id: id});
+                return this.MongoDbModel.remove((!idOrQuery) ? {} : (typeof idOrQuery === 'string') ? {id: idOrQuery} : idOrQuery);
             })
             .then((result) => {
                 return result !== null;
-            }).catch((error) => {
+            })
+            .catch((error) => {
                 return false;
             });
     }

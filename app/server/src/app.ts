@@ -4,6 +4,7 @@ import * as debug from "debug";
 import {InstanceLoader} from "./classes/instance-loader";
 import {BaseController} from "./classes/base/base-controller";
 import * as bodyParser from "body-parser";
+import {existsSync, readFileSync, realpathSync} from "fs";
 
 export class App {
 
@@ -44,6 +45,15 @@ export class App {
             process.env.MONGO_HOST = cnf.db.mongo.host;
             process.env.MONGO_PORT = cnf.db.mongo.port;
             process.env.MONGO_DBNAME = cnf.db.mongo.dbname;
+
+            let tokenFilePath = __dirname + '/../../../' + cnf.gitHubTokenFileName;
+
+            if (existsSync(tokenFilePath)) {
+                process.env.GITHUB_API_TOKEN = readFileSync(tokenFilePath, 'utf-8').replace(/\n/, '');
+            } else {
+                console.log('No github token file found @ ' + realpathSync(__dirname + '/../../../') + '/' + cnf.gitHubTokenFileName);
+                console.log('You might run into github api rate limits');
+            }
 
             process.env.GITHUB_CONTENT_API = `${cnf.gitHubApi}/repos/${cnf.userOrOrganisationName}/${cnf.repositoryName}/contents/${ cnf.contentRootFolder}?ref=${cnf.workingBranch}`;
             process.env.GITHUB_RAW_API = `${cnf.gitHubRaw}/${cnf.userOrOrganisationName}/${cnf.repositoryName}/${ cnf.workingBranch}/${ cnf.contentRootFolder}`;

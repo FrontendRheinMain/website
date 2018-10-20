@@ -9,30 +9,38 @@ export class DirectoryMongoRepository extends BaseRepository {
 
     // Both persistence layers provide an identical interface
     protected _persistence: PersistenceInterface = new PersistenceMongodb(
-        'Articles',
+        'Directories',
         new Schema({
             id: {type: String, index: true},
+            parent: {type: Schema.Types.ObjectId, index: true, required: false},
             name: {type: String, index: true},
             date: {type: Date, index: false, default: Date.now()},
-            contents: [Schema.Types.ObjectId],
-            parent: {type: Schema.Types.ObjectId, index: true}
+            contents: [Schema.Types.ObjectId]
         })
     );
 
-    public addChild(categoryId: string, childId: string) {
-
+    public fetchRoot() {
+        return this
+            ._persistence
+            .fetchAll({parent: null})
+            .then((rootDirectoryResult) => {
+                return this._persistence.fetchAll({parent: rootDirectoryResult.pop()._id})
+            })
+            .then((rootDirectoryChilds) => {
+                return rootDirectoryChilds
+                    .map((rootDirectoryChild) => {
+                        return {
+                            name: rootDirectoryChild.name,
+                            date: rootDirectoryChild.date,
+                            id: rootDirectoryChild.id
+                        };
+                    });
+            });
     }
 
-    public removeChild(categoryId: string, childId: string) {
-
+    public destroy() {
+        this._persistence.remove({});
     }
-
-    public setParent(categoryId: string, parentCategoryId: string) {
-
-    }
-
-
-
 
     protected _getModel(modelData): ModelInterface {
         return new DirectoryModel(modelData);

@@ -11,14 +11,15 @@ import {filter, mergeMap} from "rxjs/operators";
 })
 export class ContentService {
     private endpoint: string = environment.applicationServer + 'content/json/';
+    private directoryEndpoint: string = environment.applicationServer + 'directory';
 
 
     constructor(private http: HttpClient) {
 
     }
 
-    public fetchCategories(): Observable<any> {
-        return this.http.get(this.endpoint);
+    public fetchDirectory(): Observable<any> {
+        return this.http.get(this.directoryEndpoint);
     }
 
     public fetchNextEvent(): Observable<any> {

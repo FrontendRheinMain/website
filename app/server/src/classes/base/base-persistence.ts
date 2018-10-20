@@ -6,10 +6,10 @@ import {ModelInterface} from "../../interfaces/model.interface";
 export abstract class BasePersistence implements PersistenceInterface {
 
     protected abstract _create(model: ModelInterface): Promise<boolean>
-    protected abstract _fetchAll(): Promise<Array<any>>
+    protected abstract _fetchAll(idOrQuery: any | undefined): Promise<Array<any>>
     protected abstract _fetch(id: string): Promise<any>
-    protected abstract _update(id: string, model: ModelInterface): Promise<boolean>
-    protected abstract _remove(id: string): Promise<boolean>
+    protected abstract _update(id: string | undefined, model: ModelInterface): Promise<boolean>
+    protected abstract _remove(idOrQuery: any | undefined): Promise<boolean>
 
     protected _getHashString(inputString: string): string {
         return createHash('sha256').update(inputString).digest('hex');
@@ -19,8 +19,8 @@ export abstract class BasePersistence implements PersistenceInterface {
         return this._create(model);
     }
 
-    public fetchAll(): Promise<Array<any>> {
-        return this._fetchAll();
+    public fetchAll(idOrQuery: any | undefined): Promise<Array<any>> {
+        return this._fetchAll(idOrQuery);
     }
 
     public fetch(id: string): Promise<any> {
@@ -31,7 +31,7 @@ export abstract class BasePersistence implements PersistenceInterface {
         return this._update(id, model);
     }
 
-    public remove(id: string): Promise<boolean> {
-        return this._remove(id);
+    public remove(idOrQuery: any | undefined): Promise<boolean> {
+        return this._remove(idOrQuery);
     }
 }

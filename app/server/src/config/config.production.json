@@ -5,13 +5,15 @@
     "port": 4001
   },
   "controllers": [
-    "ExampleController",
+    "ImportController",
+    "DirectoryController",
     "ContentController"
   ],
   "userOrOrganisationName": "FrontendRheinMain",
   "repositoryName": "website",
   "contentRootFolder": "content",
   "workingBranch": "develop",
+  "gitHubTokenFileName": "github-token",
   "gitHubRaw": "https://raw.githubusercontent.com",
   "gitHubApi": "https://api.github.com",
   "db": {
