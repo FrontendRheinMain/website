@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {ExampleService} from "../../services/example.service";
 import {Observable} from "rxjs";
 import {ContentService} from "../../services/content.service";
+import {DirectoriesService} from "../../services/directories.service";
 
 @Component({
     selector: 'ferm-root',
@@ -11,12 +11,12 @@ import {ContentService} from "../../services/content.service";
 export class MainComponent {
     title = 'ferm';
 
-    public categories$: Observable<any[]>;
+    public directories$: Observable<any[]>;
     public nextEvent$: Observable<any[]>;
     public previousEvents$: Observable<any[]>;
 
-    constructor(private contentService: ContentService) {
-        this.categories$ = this.contentService.fetchDirectory();
+    constructor(private directoryService: DirectoriesService, private contentService: ContentService) {
+        this.directories$ = this.directoryService.fetchRootTree();
         this.nextEvent$ = this.contentService.fetchNextEvent();
         this.previousEvents$ = this.contentService.fetchPreviousEvents();
 
