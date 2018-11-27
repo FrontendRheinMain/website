@@ -14,6 +14,8 @@ docker rm $DB_NAME
 #docker rmi $(docker images | grep $SERVER_NAME | tr -s ' ' | cut -d ' ' -f 3)
 #docker rmi $(docker images | grep $DB_NAME | tr -s ' ' | cut -d ' ' -f 3)
 
+echo "Resolve dependencies"
+npm install
 echo "Rebuild the client"
 npm run build:client
 
