@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ferm-navigation *ngIf="directories$" [categories]="directories$"></ferm-navigation>
+
+<br>
+
+BREADCRUMB
+
+<br>
+
+<h1>NEXT</h1>
+<ferm-next-event *ngIf="nextEvent$" [event]="nextEvent$"></ferm-next-event>
+
+<h1>PREV</h1>
+<ferm-previous-events  *ngIf="previousEvents$" [events]="previousEvents$"></ferm-previous-events>
+LAST_EVENT (Slideshow???)
+
+<br>
+
+ARCHIVE
+
+<br>
+
+LAST_EVENT
+
+<h2>This is a list from backend content controller</h2>
+
+
+
+<router-outlet></router-outlet>
+
+FOOTER

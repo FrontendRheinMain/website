@@ -1,0 +1,4 @@
+<div *ngIf="previousEvents$ | async as previousEvents" class="row">
+    <pre>{{previousEvents.metaData|json}}</pre>
+    <div class="col col-lg-12" [innerHtml]="previousEvents.content"></div>
+</div>

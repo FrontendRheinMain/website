@@ -1,0 +1,18 @@
+{
+  "server": {
+    "port": 9999
+  },
+  "controllers": [
+    "ExampleController"
+  ],
+  "db": {
+    "mongo": {
+      "host": "localhost",
+      "port": "27017",
+      "dbname": "FERMTESTING"
+    }
+  },
+  "states": [
+    "testing"
+  ]
+}

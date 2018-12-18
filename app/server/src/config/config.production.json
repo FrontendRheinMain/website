@@ -1,0 +1,28 @@
+{
+  "server": {
+    "protocol": "https",
+    "domain": "my.production.domain",
+    "port": 4001
+  },
+  "controllers": [
+    "ImportController",
+    "DirectoryController",
+    "ContentController"
+  ],
+  "userOrOrganisationName": "FrontendRheinMain",
+  "repositoryName": "website",
+  "contentRootFolder": "content",
+  "workingBranch": "develop",
+  "gitHubTokenFileName": "github-token",
+  "gitHubRaw": "https://raw.githubusercontent.com",
+  "gitHubApi": "https://api.github.com",
+  "db": {
+    "mongo": {
+      "host": "mongo",
+      "port": "27017",
+      "dbname": "FERMPROD"
+    }
+  },
+  "states": [
+  ]
+}

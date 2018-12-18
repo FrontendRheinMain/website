@@ -1,0 +1,28 @@
+{
+  "server": {
+    "protocol": "http",
+    "domain": "localhost:4200",
+    "port": 4000
+  },
+  "controllers": [
+    "ImportController",
+    "DirectoryController",
+    "ContentController"
+  ],
+  "userOrOrganisationName": "FrontendRheinMain",
+  "repositoryName": "website",
+  "contentRootFolder": "content",
+  "workingBranch": "develop",
+  "gitHubTokenFileName": "github-token",
+  "gitHubRaw": "http://localhost:9998",
+  "gitHubApi": "http://localhost:9999",
+  "db": {
+    "mongo": {
+      "host": "localhost",
+      "port": "27017",
+      "dbname": "FERMDEV"
+    }
+  },
+  "states": [
+  ]
+}

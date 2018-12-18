@@ -1,0 +1,3 @@
+<div *ngIf="nextEvent$ | async as nextEvent" class="row">
+    <div class="col col-lg-12" [innerHtml]="nextEvent.content"></div>
+</div>

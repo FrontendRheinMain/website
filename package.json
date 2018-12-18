@@ -1,0 +1,23 @@
+{
+  "name": "FERM-Website",
+  "version": "2.0.6",
+  "description": "The public website of FrontendRheinMain — Feel free to join and collaborate & improve",
+  "main": "app.js",
+  "repository": "https://github.com/FrontendRheinMain/website",
+  "author": "Bernhard Behrendt <bernhard.bezdek@googlemail.com> Jan Deppisch <info@frontend-rheinmain.de>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "postinstall": "npm run resolve:dependencies",
+    "resolve:dependencies": "npm run install:server && npm run install:client",
+    "clean": "rm -rf ./node_modules && rm -rf app/client/node_modules && rm -rf app/server/node_modules",
+    "install:clean": "npm run clean && npm run resolve:dependencies",
+    "install:server": "cd app/server && npm install",
+    "install:client": "cd app/client && npm install",
+    "build:client": "cd ./app/client && yarn build",
+    "develop": "concurrently \"cd app/client && npm run develop\" \"cd app/server && npm run develop\""
+  },
+  "dependencies": {
+    "concurrently": "^3.6.1"
+  }
+}

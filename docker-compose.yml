@@ -1,0 +1,46 @@
+version: "3.7"
+
+networks:
+  main:
+
+services:
+  ferm:
+    build: ./app/
+    ports:
+    - "4001:4001"
+    links:
+    - mongo
+    depends_on:
+    - mongo
+  mongo:
+    image: mongo
+    ports:
+    - "27017:27017"
+    volumes:
+    - "./mongo/data:/data/db"
+
+  wiremock-github-raw:
+    container_name: wiremock-github-raw
+    build: wiremock-github-raw/
+    ports:
+    - 9998:8080
+    volumes:
+    - "./wiremock-github-raw/data:/data"
+    networks:
+      main:
+        aliases:
+        - wiremock-github-raw.docker
+
+  wiremock-github-api:
+    container_name: wiremock-github-api
+    build: ./wiremock-github-api/
+    ports:
+    - 9999:8080
+    volumes:
+    - "./wiremock-github-api/data:/data"
+    networks:
+      main:
+        aliases:
+        - wiremock-github-api.docker
+
+

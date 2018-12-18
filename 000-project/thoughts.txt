@@ -1,0 +1,14 @@
+Modules for
+- Pages
+- Periodic UI-Elements like "Speaker"
+
+Table to data object (Markdown) (Recursice)
+
+Libs:
+https://github.com/showdownjs/showdown
+
+
+Structure of content and backlinks
+Is this transformable into an api???
+Event <- Company <- - Sponsor(s) <- Goods/Promotion
+                    - Speaker(s) <- KeyNote <- Topic

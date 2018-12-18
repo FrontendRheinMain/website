@@ -1,0 +1,10 @@
+{
+  "module": "commonjs",
+  "sourceMap": true,
+  "target": "ES5",
+  "compilerOptions": {
+    "lib": [
+      "es2015"
+    ]
+  }
+}
